@@ -1,0 +1,21 @@
+*,
+*::after *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #333;
+  height: 30vh;
+
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  /*atajo de flex direction y flex wrap*/
+  flex-flow: column wrap;
+}
+.items {
+  border: medium solid #999;
+  width: 20%;
+  height: 20%;
+  background-color: #666;
+}

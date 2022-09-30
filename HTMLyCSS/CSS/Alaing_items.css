@@ -1,0 +1,35 @@
+*,
+*::after *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #333;
+  height: 30vh;
+  /*define que una caja sera de flexbox de caja o flexbox de linea*/
+  display: flex;
+  /*define la direccion o el eje principal de un contender*/
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  /*atajo de flex direction y flex wrap*/
+  flex-flow: column wrap;
+  /*alineacion de los elemento hijas dentro de la caja padre dependiendo de la padre*/
+  justify-content: flex-start;
+  /*funciona para alinear los hijos dentro del eje transversal dentro de cada linea*/
+  align-items: stretch;
+  /*define la alineacion de los hijos en el eje tranversal (No funciona cuando los hijos estan en una sola line)*/
+  align-content: stretch;
+}
+.items {
+  border: medium solid #999;
+  /*width: 20%;*/
+  /*height: 10%;*/
+  background-color: #666;
+}
+
+/*
+.items:nth-child(2),
+.items:nth-child(17) {
+  font-size: 220%;
+}
+*/
