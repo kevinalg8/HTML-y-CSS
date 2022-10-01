@@ -13,7 +13,7 @@
   /*define la direccion o el eje principal de un contender*/
   flex-direction: row;
   /*atajo de flex direction y flex wrap*/
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   /*alineacion de los elemento hijas dentro de la caja padre dependiendo de la padre*/
   justify-content: flex-start;
   /*funciona para alinear los hijos dentro del eje transversal dentro de cada linea*/
@@ -36,13 +36,22 @@
   flex-basis:100px;
   /*shorthand donde 0 es el flexgrow, 1 es flexshrink y auto es el basis*/
   flex: 0 1 144px;
+  /*Order reprensenta el orden que tendra los elementos hijos dentro la caja padre
+  valor por defecto es 0 se aceptan tanto valores negativos como posistivos
+  
+  un valor menor siempre ira antes que un valor mayor*/
+  order: 0;
+  /*sobreescribe el valor de la propiedad aling-items solo para el elemento hijo especifico*/
+  align-self: stretch;
 }
 
 .items:nth-child(2) {
   /*flex-shrink: 2;*/
+  order:-1;
 }
 
 .items:nth-child(3) {
+  align-self: center;
 }
 
 /*.items:nth-child(2),
