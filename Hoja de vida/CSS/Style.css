@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: grey;
+}
+
+header{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    background-color: crimson;
+}
+.Padre{
+    height: 55vh;
+    margin: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.hija{
+    background-color:#ffff;
+    text-align: center;
+    width: 30%;
+    padding-top: 10px;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 1px 1px;
+}
+.hija p{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 1,9rem;
+}
+.hija img{
+    padding-top: 14px;
+}
+.contacto{
+    background-color:crimson;
+    height: 9.7rem;
+    text-align: center;
+}
+
